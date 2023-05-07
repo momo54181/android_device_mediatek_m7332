@@ -14,6 +14,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+	# R11.1 Settings
+	export FOX_VERSION="R11.0_0"
+	export FOX_BUILD_TYPE="Beta"
+	export OF_MAINTAINER="Momo5418"
 #
 
 add_lunch_combo omni_m7332-userdebug
