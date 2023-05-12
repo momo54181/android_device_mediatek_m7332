@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_m7332.mk
+    $(LOCAL_DIR)/twrp_m7332.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_m7332-user \
-    omni_m7332-userdebug \
-    omni_m7332-eng
+    twrp_m7332-user \
+    twrp_m7332-userdebug \
+    twrp_m7332-eng
