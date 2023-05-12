@@ -20,7 +20,7 @@
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
+PRODUCT_RELEASE_NAME := m7332
 # Inherit from m7332 device
 $(call inherit-product, device/mediatek/m7332/device.mk)
 

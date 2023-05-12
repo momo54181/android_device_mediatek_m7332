@@ -1,3 +1,4 @@
+# Android fstab file.
 # mount point       fstype    device                                                                flags
 /system             ext4      system                                                                flags=display="System";backup=1;logical;
 /system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;

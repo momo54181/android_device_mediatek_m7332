@@ -14,11 +14,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-	# R11.1 Settings
-	export FOX_VERSION="R11.0_0"
+FDEVICE="m7332"
+if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
+	export FOX_VERSION="R11.1_0"
 	export FOX_BUILD_TYPE="Beta"
 	export OF_MAINTAINER="Momo5418"
+	# let's see what are our build VARs
+	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
+  	   export | grep "FOX" >> $FOX_BUILD_LOG_FILE
+  	   export | grep "OF_" >> $FOX_BUILD_LOG_FILE
+  	   export | grep "TW_" >> $FOX_BUILD_LOG_FILE
+  	fi
+
+	add_lunch_combo omni_"$FDEVICE"-eng
+fi
 #
 
-add_lunch_combo omni_m7332-userdebug
-add_lunch_combo omni_m7332-eng
+# add_lunch_combo omni_m7332-userdebug
+# add_lunch_combo omni_m7332-eng
