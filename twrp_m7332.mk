@@ -9,7 +9,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/$(CUSTOM_VENDOR)/config/common.mk)
+$(call inherit-product, vendor/mediatek/m7332/config/common.mk)
 
 # Inherit from m7332 device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
