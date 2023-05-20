@@ -25,8 +25,8 @@ PRODUCT_RELEASE_NAME := m7332
 $(call inherit-product, device/mediatek/m7332/device.mk)
 
 # Inherit some common Omni stuff.
-# $(call inherit-product, vendor/omni/config/common.mk)
-# $(call inherit-product, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/mediatek/m7332/common.mk)
+$(call inherit-product, vendor/mediatek/m7332/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m7332
