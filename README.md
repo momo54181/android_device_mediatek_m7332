@@ -1,4 +1,13 @@
-# android_device_mediatek_m7332
+# Android device tree for MediaTek m7332 (m7332)
+
+```
+#
+# Copyright (C) 2024 The Android Open Source Project
+# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```
 SOC：MTK M7332
 
 SOC频率：1150 - 1550Mhz
